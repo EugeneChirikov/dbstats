@@ -1,10 +1,9 @@
-Ext.define('MyApp.view.Main', {
+Ext.define('DBStats.view.Main', {
     extend:'Ext.container.Viewport',
     layout:'fit',
 
     requires:[
-        'MyApp.view.user.List',
-        'MyApp.view.user.Edit'
+        'DBStats.view.dbscheme.List'
     ],
 
     initComponent:function ()
@@ -12,14 +11,17 @@ Ext.define('MyApp.view.Main', {
         this.items = {items: [
             {
                 xtype: 'container'
-                , html:'<div>Double-Click to edit</div>'
+                , html:'<div>Double-Click to open objects list</div>'
                 , style: {
                     padding: '10px',
                     font: '1.2em'
                 }
             },
             {
-                xtype:'userlist'
+                xtype:'schemeslist',
+                style: {
+                    padding: '10px'
+                }
             }
         ]};
 

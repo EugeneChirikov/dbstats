@@ -19,7 +19,7 @@
     <!-- *****
 		   * REST API Service
 	 ****** -->
-	<bean id="userService" class="com.cardpay.train.services.UserService"></bean>
+	<bean id="userService" class="com.cardpay.train.services.DBStatsService"></bean>
 
 
 

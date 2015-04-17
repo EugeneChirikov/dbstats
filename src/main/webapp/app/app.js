@@ -1,20 +1,19 @@
 Ext.Loader.setConfig({enabled:true, disableCache:true});
 
 Ext.application({
-    name:'MyApp',
+    name:'DBStats',
     appFolder:"app",
     autoCreateViewport:false,
 
-    models:['User'],
-    stores:['Users'],
-    controllers:['Users'],
+    models:['DBObject', 'DBScheme'],
+    stores:['DBObjects', 'DBSchemes'],
+    controllers:['DBObjects', 'DBSchemes'],
 
     launch:function ()
     {
-        this.viewport = Ext.create('MyApp.view.Main', {
+        console.log("App launch function called!");
+        this.viewport = Ext.create('DBStats.view.Main', {
             application:this
         });
     }
 });
-
-
