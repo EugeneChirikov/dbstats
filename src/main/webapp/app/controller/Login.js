@@ -1,6 +1,3 @@
-/**
- * Created by developer_09 on 4/20/2015.
- */
 Ext.define('DBStats.controller.Login', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.login',
